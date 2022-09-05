@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Conway's Game of Life</title>
 </head>
 
 <body>
     <canvas id="gol"></canvas>
+    <div class="buttonsContainer">
+        <button id="start">Start</button>
+        <button id="clear">Clear</button>
+        <button id="random">Random</button>
+    </div>
+    <div class="settingsContainer">
+        <div class="settings">
+            <label for="speed">Speed</label>
+            <input type="range" id="speed" min="0" max="1000" value="900">
+        </div>
+        <div class="settings">
+            <label for="size">Cell Size</label>
+            <input type="range" id="size" min="10" max="100" value="40">
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 
